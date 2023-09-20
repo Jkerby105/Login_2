@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Palette Masaic", cursive;
+}
+
+html {
+  font: 62.5%;
+}
+
+.login {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5% auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: black;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px 20px rgb(105, 184, 135);
+}
+
+.login_left {
+  height: 500px;
+  background-color: antiquewhite;
+  background: url("img/gunna\ lil\ baby\ drip\ harder.jpeg") no-repeat center;
+  background-size: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.login_password_input {
+  margin-left: 1.6rem;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+.login_username_input {
+  margin-right: 0.8rem;
+  margin-left: 1.6rem;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+.login_label_username {
+  margin-left: 0.7rem;
+  font-size: 1.8rem;
+  position: relative;
+  color: white;
+}
+
+.login_label_username::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 240px;
+  margin-left: 5rem;
+  background-color: darkgreen;
+  bottom: -0.1px;
+}
+
+.login_label_password {
+  margin-left: 0.7rem;
+  font-size: 1.8rem;
+  color: white;
+  position: relative;
+}
+
+.login_label_password::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 80px;
+  width: 240px;
+  margin-left: 5rem;
+  background-color: darkgreen;
+  bottom: -0.1px;
+}
+
+.login_password_input {
+  margin-top: 1rem;
+  border-radius: black;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.login_username_input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: black;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+}
+
+.login_forgotPassword {
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 0.7rem;
+}
+
+.login_button {
+  position: relative;
+  margin: 29%;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 10px;
+  background-color: darkgreen;
+  color: aliceblue;
+}
+
+.login_sign_up {
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.login_sign {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(12, 158, 56);
+}
+
+.line {
+  position: relative;
+  bottom: -10px;
+  border-bottom: solid 10px black;
+}
+
+@media (min-width: 745px) {
+  body {
+    background-color: black;
+  }
+
+  .login {
+    background-color: white;
+  }
+  .login_left {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .login_label_password {
+    color: black;
+  }
+  .login_label_username {
+    color: black;
+  }
+
+  .login_sign_up {
+    color: black;
+  }
+
+  .login_forgotPassword {
+    color: black;
+  }
+
+  .line {
+    border-bottom: solid 10px white;
+  }
+}
+
+@media (min-width: 905px) {
+  body {
+    background: #000000; /* falund-color: lback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #0f9b0f,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #0f9b0f,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .login {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 10% auto;
+  }
+  .login_left {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+  }
+  .line {
+    border-bottom: solid 10px white;
+  }
+}
